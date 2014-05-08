@@ -45,7 +45,9 @@ static size_t append_number(char* words, int num) {
   int ones_val = num % 10;
 
   size_t len = 0;
-
+  if(tens_val==0){
+    strcat(words, TEENS[tens_val]);
+  }
   if (tens_val > 0) {
     if (tens_val == 1 && num != 10) {
       strcat(words, TEENS[ones_val]);
