@@ -1,0 +1,26 @@
+{
+  "uuid": "0f9f49a2-7bcd-4b1a-b34e-1e4a9d84f225",
+  "shortName": "PebbleTextWatch tr",
+  "longName": "PebbleTextWatch tr",
+  "companyName": "Kripton",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "font",
+        "name": "FONT_LIGHT_42",
+        "file": "fonts/light_42.ttf"
+      },
+      {
+	"type": "font",
+	"name": "FONT_BOLD_42",
+	"file": "fonts/bold_42.ttf"
+      }
+    ]
+  }
+}
