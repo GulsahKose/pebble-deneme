@@ -105,7 +105,7 @@ void time_to_3words(int hours, int minutes, char *line1, char *line2, char *line
 	
 	char *start = value;
 	char *pch = strstr (start, " ");
-        char *saat = value
+        char *saat = value;
 	char *sch = strstr (saat, "saat");
 	while (pch != NULL || sch != NULL) {
 		if (line1[0] == 0) {
