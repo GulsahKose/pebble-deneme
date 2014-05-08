@@ -105,11 +105,13 @@ void time_to_3words(int hours, int minutes, char *line1, char *line2, char *line
 	
 	char *start = value;
 	char *pch = strstr (start, " ");
-	while (pch != NULL) {
+        char *saat = value
+	char *sch = strstr (saat, "saat");
+	while (pch != NULL || sch != NULL) {
 		if (line1[0] == 0) {
 			memcpy(line1, start, pch-start);
 		}  else if (line2[0] == 0) {
-			memcpy(line2, start, pch-start);
+			memcpy(line2, saat, sch-saat);
 		} else if (line3[0] == 0) {
 			memcpy(line3, start, pch-start);
 		}
